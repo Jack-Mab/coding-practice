@@ -1,0 +1,42 @@
+Problem Status: Test Writing
+
+Problem Description:
+    - The problem of finding duplicates in an array (of size N) involves identifying elements in an array that occur more than once.
+    - The elements are chosen from the range 1 to N-1.
+    - Given an array of elements, the task is to find all the elements that occur more than once and return them as an array.
+
+Input:
+    - An array of elements
+
+Output:
+    - An array of elements that occur more than once
+
+Constraints:
+    - The array can be unsorted
+    - The output array must be sorted
+    - Expected Time Complexity: O(n).
+    - Expected Auxiliary Space: O(n). [For the returned array]
+    - 1 <= N <= 105
+    - 0 <= A[i] <= N-1, for each valid i
+
+Current Solution:
+    - Create a hash table to store the frequency of each element
+    - Iterate through the hash table and add the elements that occur more than once to the output array
+    - Sort the output array
+    - Return the output array
+
+    Time Complexity:
+        - O(n) to iterate through the array
+        - O(n) to iterate through the hash table
+        - O(nlogn) to sort the output array
+        - O(n) + O(n) + O(nlogn) + O(n) = O(nlogn)
+
+    Space Complexity:
+        - O(n) to store the hash table
+        - O(n) to store the output array
+        - O(n) + O(n) = O(n)
+
+    Problems:
+        - The time complexity is O(nlogn) instead of O(n)
+        - The space complexity is O(n) but it also includes a hash table.
+        - Is there a way to solve this problem without using a hash table?
