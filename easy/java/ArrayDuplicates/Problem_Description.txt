@@ -1,4 +1,4 @@
-Problem Status: Test Writing
+Problem Status: Implementing Solution
 
 Problem Description:
     - The problem of finding duplicates in an array (of size N) involves identifying elements in an array that occur more than once.
